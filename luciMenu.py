@@ -40,51 +40,51 @@ for i in config:
 with open(file, 'w') as f:
     json.dump(s, f, indent='\t')
 
-applications = {
-    'hd-idle': ['admin/services', 'admin/nas'],
-}
 # applications = {
-#     'aria2': ['admin/services', 'admin/nas'],
 #     'hd-idle': ['admin/services', 'admin/nas'],
 # }
-keys = applications.keys()
+# # applications = {
+# #     'aria2': ['admin/services', 'admin/nas'],
+# #     'hd-idle': ['admin/services', 'admin/nas'],
+# # }
+# keys = applications.keys()
 
-xx = []
+# xx = []
 
-cuts = ['/', '", "', "', '", ']], [[']
-
-
-def readFile(file, k):
-    a1 = k[0]
-    a2 = k[1]
-    f = open(file)
-    s = f.read()
-    f.close()
-    for i in cuts:
-        b1 = a1.replace('/', i)
-        b2 = a2.replace('/', i)
-        if b1 in s:
-            s = s.replace(b1, b2)
-            f = open(file, 'w')
-            f.write(s)
-            f.close()
-            xx.append(file)
-            print(file)
+# cuts = ['/', '", "', "', '", ']], [[']
 
 
-# a1 = 'admin/services'
-# b1 = '"admin", "services"'
+# def readFile(file, k):
+#     a1 = k[0]
+#     a2 = k[1]
+#     f = open(file)
+#     s = f.read()
+#     f.close()
+#     for i in cuts:
+#         b1 = a1.replace('/', i)
+#         b2 = a2.replace('/', i)
+#         if b1 in s:
+#             s = s.replace(b1, b2)
+#             f = open(file, 'w')
+#             f.write(s)
+#             f.close()
+#             xx.append(file)
+#             print(file)
 
-for r, dirs, files in os.walk('feeds'):
-    for file in files:
-        filepath = os.path.join(r, file)
-        filedir = filepath.replace(file, '')
-        for i in keys:
-            if i in filedir:
-                try:
-                    readFile(filepath, applications[i])
-                except Exception as e:
-                    print(e)
-                    pass
 
-print(len(xx))
+# # a1 = 'admin/services'
+# # b1 = '"admin", "services"'
+
+# for r, dirs, files in os.walk('feeds'):
+#     for file in files:
+#         filepath = os.path.join(r, file)
+#         filedir = filepath.replace(file, '')
+#         for i in keys:
+#             if i in filedir:
+#                 try:
+#                     readFile(filepath, applications[i])
+#                 except Exception as e:
+#                     print(e)
+#                     pass
+
+# print(len(xx))
