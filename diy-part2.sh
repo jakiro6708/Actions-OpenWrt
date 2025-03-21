@@ -9,9 +9,9 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-# sed -i 's/dnsmasq/dnsmasq-full blockd libopenssl-legacy libopenssl-conf zerotier kmod-fs-cifs kmod-nls-utf8 luci luci-app-argon-config luci-app-aria2 luci-app-vlmcsd/g' include/target.mk
+sed -i 's/dnsmasq/dnsmasq-full blockd libopenssl-legacy libopenssl-conf netdata zerotier kmod-fs-cifs kmod-nls-utf8 luci luci-app-argon-config luci-app-aria2 luci-app-vlmcsd/g' include/target.mk
 
-sed -i 's/dnsmasq/dnsmasq blockd libopenssl-legacy libopenssl-conf netdata zerotier kmod-fs-cifs kmod-nls-utf8 luci luci-app-argon-config luci-app-aria2 luci-app-vlmcsd/g' include/target.mk
+# sed -i 's/dnsmasq/dnsmasq blockd libopenssl-legacy libopenssl-conf netdata zerotier kmod-fs-cifs kmod-nls-utf8 luci luci-app-argon-config luci-app-aria2 luci-app-vlmcsd/g' include/target.mk
 
 
 # 带USB的路由器
