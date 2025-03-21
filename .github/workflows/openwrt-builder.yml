@@ -77,7 +77,7 @@ jobs:
         chmod +x $DIY_P2_SH
         
         cp -rf megatron openwrt/package/megatron
-        cp -rf passwall openwrt/package/megatron/passwall
+        cp -rf helloworld openwrt/package/megatron/helloworld
         rm -rf openwrt/feeds/luci/applications/luci-app-aria2
         rm -rf openwrt/feeds/packages/net/aria2
         cp -rf luci-app-aria2 openwrt/feeds/luci/applications/luci-app-aria2
