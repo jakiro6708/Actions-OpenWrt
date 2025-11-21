@@ -1,6 +1,7 @@
 {
 	"admin/vlmcsd": {
 		"title": "Bandwidth Monitor",
+		"order": 100,
 		"action": {
 			"type": "view",
 			"path": "vlmcsd"
