@@ -12,14 +12,6 @@ luciBase = {
             "recurse": True
         }
     },
-    "admin/nlbw": {
-        "title": "Bandwidth Monitor",
-        "order": 100,
-        "action": {
-            "type": "firstchild",
-            "recurse": True
-        }
-    },
 }
 
 file = 'feeds/luci/modules/luci-base/root/usr/share/luci/menu.d/luci-base.json'
