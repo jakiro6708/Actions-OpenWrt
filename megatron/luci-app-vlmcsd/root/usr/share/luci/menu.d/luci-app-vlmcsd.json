@@ -1,6 +1,6 @@
 {
-	"admin/nlbw/vlmcsd": {
-		"title": "Vlmcsd KMS Server",
+	"admin/vlmcsd": {
+		"title": "Bandwidth Monitor",
 		"action": {
 			"type": "view",
 			"path": "vlmcsd"
