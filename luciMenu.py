@@ -12,6 +12,20 @@ luciBase = {
             "recurse": True
         }
     },
+    "admin/vlmcsd": {
+        "title": "Bandwidth_Monitor",
+        "order": 100,
+        "action": {
+            "type": "view",
+            "path": "vlmcsd"
+        },
+        "depends": {
+            "acl": ["luci-app-vlmcsd"],
+            "uci": {
+                "vlmcsd": true
+            }
+        }
+    },
 }
 
 file = 'feeds/luci/modules/luci-base/root/usr/share/luci/menu.d/luci-base.json'
@@ -45,7 +59,6 @@ with open(file, 'w') as f:
 
 # cuts = ['/', '", "', "', '", ']], [[']
 
-
 # def readFile(file, k):
 #     a1 = k[0]
 #     a2 = k[1]
@@ -62,7 +75,6 @@ with open(file, 'w') as f:
 #             f.close()
 #             xx.append(file)
 #             print(file)
-
 
 # # a1 = 'admin/services'
 # # b1 = '"admin", "services"'
