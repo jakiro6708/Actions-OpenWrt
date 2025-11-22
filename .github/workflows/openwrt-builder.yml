@@ -82,7 +82,7 @@ jobs:
         # rm -rf openwrt/feeds/packages/net/aria2
         # cp -rf luci-app-aria2 openwrt/feeds/luci/applications/luci-app-aria2
         # cp -rf aria2 openwrt/feeds/packages/net/aria2
-        cp luciMenu.py openwrt/luciMenu.py
+        # cp luciMenu.py openwrt/luciMenu.py
         
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
