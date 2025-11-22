@@ -12,20 +12,6 @@ luciBase = {
             "recurse": True
         }
     },
-    "admin/vlmcsd": {
-        "title": "Bandwidth_Monitor",
-        "order": 100,
-        "action": {
-            "type": "view",
-            "path": "vlmcsd"
-        },
-        "depends": {
-            "acl": ["luci-app-vlmcsd"],
-            "uci": {
-                "vlmcsd": true
-            }
-        }
-    },
 }
 
 file = 'feeds/luci/modules/luci-base/root/usr/share/luci/menu.d/luci-base.json'

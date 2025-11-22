@@ -8,10 +8,15 @@ include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=Argon Theme
 LUCI_DEPENDS:=+wget +jsonfilter
-PKG_VERSION:=2.4.3
-PKG_RELEASE:=20250722
+
+PKG_VERSION:=2.3.2
+PKG_RELEASE:=20250207
 
 CONFIG_LUCI_CSSTIDY:=
+
+define Package/luci-theme-argon/conffiles
+/www/luci-static/argon/background/
+endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
