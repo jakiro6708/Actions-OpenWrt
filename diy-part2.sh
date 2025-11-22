@@ -23,7 +23,7 @@ sed -i 's/dnsmasq/dnsmasq-full blockd libopenssl-legacy libopenssl-conf zerotier
 
 # chmod +x luciMenu.py
 # python3 luciMenu.py
-# rm -rf luciMenu.py
+rm -rf luciMenu.py
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
