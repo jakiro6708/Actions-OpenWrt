@@ -32,7 +32,11 @@ sed -i 's/admin\/services\/wol/admin\/wol/g' feeds/luci/applications/luci-app-wo
 # python3 luciMenu.py
 # rm -rf luciMenu.py
 
-
+# cat feeds/luci/modules/luci-base/root/usr/share/luci/menu.d/luci-base.json
+# cat feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
+# cat feeds/luci/applications/luci-app-dockerman/Makefile
+# ls feeds/luci/applications/luci-app-aria2
+# ls feeds/packages/net/aria2
 
 
 # Modify default theme
