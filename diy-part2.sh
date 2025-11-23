@@ -27,7 +27,7 @@ sed -i 's/dnsmasq/dnsmasq-full blockd libopenssl-legacy libopenssl-conf zerotier
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
-sed -i '/\"title\": \"kms server\"/a\\		\"order\": 100,' feeds/luci/applications/luci-app-dockerman/luci-app-vlmcsd.json
+sed -i '/\"title\": \"kms server\"/a\\		\"order\": 100,' feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
