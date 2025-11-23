@@ -20,17 +20,17 @@ sed -i 's/dnsmasq/dnsmasq-full blockd libopenssl-legacy libopenssl-conf zerotier
 # 带USB的路由器
 # sed -i 's/ppp-mod-pppoe/ppp-mod-pppoe vsftpd kmod-fs-exfat kmod-fs-ext4 kmod-fs-vfat kmod-usb-storage kmod-usb2 kmod-usb3 luci-app-hd-idle luci-app-samba4/g' include/target.mk
 
+# Modify default IP
+sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/admin/services/wol/admin/wol/g' feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
+# sed -i '/\"title\": \"kms server\"/a\\		\"order\": 100,' feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
 
 # chmod +x luciMenu.py
 # python3 luciMenu.py
 # rm -rf luciMenu.py
 
-# Modify default IP
-sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
-sed -i 's/admin/services/wol/admin/wol/g' feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
-# sed -i '/\"title\": \"kms server\"/a\\		\"order\": 100,' feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
-# Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
