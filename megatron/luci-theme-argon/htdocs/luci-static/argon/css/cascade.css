@@ -2286,11 +2286,6 @@ div[style="width:100%;height:300px;border:1px solid #000;background:#fff"] {
 }
 
 .main .main-left .nav li a[data-title=KMS_Server]::before, .main .main-left .nav li .food[data-title=KMS_Server]::before {
-    content: "\e90c";
-    color: #f3a4b5
-}
-
-.main .main-left .nav li a[data-title=Wake_on_LAN]::before, .main .main-left .nav li .food[data-title=Wake_on_LAN]::before {
     content: "\e90d";
     color: #2dce89
 }
