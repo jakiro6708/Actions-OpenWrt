@@ -12,6 +12,20 @@
 # sed -i 's/dnsmasq/dnsmasq-full luci/g' include/target.mk
 # netdata passwall helloworld
 
+cp -rf ../megatron package/megatron
+cp -rf ../passwall package/megatron/passwall
+# rm -rf feeds/luci/applications/luci-app-aria2
+# rm -rf feeds/luci/applications/luci-app-dockerman
+# rm -rf feeds/packages/net/aria2
+# cp -rf ../luci-app-aria2 feeds/luci/applications/luci-app-aria2
+# cp -rf ../luci-app-dockerman feeds/luci/applications/luci-app-dockerman
+# cp -rf ../aria2 feeds/packages/net/aria2
+# cp ../luciMenu.py luciMenu.py
+
+
+# sed -i 's/dnsmasq/dnsmasq-full luci/g' include/target.mk
+# netdata passwall helloworld
+
 # sed -i 's/dnsmasq/dnsmasq-full blockd libopenssl-legacy libopenssl-conf zerotier kmod-fs-cifs kmod-nls-utf8 luci luci-app-argon-config luci-app-aria2 luci-app-vlmcsd/g' include/target.mk
 sed -i 's/dnsmasq/dnsmasq-full blockd iperf3 libopenssl-legacy libopenssl-conf zerotier kmod-fs-cifs kmod-nls-utf8 luci luci-app-argon-config luci-app-aria2 luci-app-vlmcsd luci-app-wol/g' include/target.mk
 
