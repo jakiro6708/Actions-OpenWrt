@@ -12,18 +12,6 @@
 # sed -i 's/dnsmasq/dnsmasq-full luci/g' include/target.mk
 # netdata passwall helloworld
 
-cp -rf ../megatron package/megatron
-cp -rf ../passwall package/megatron/passwall
-# rm -rf feeds/luci/applications/luci-app-aria2
-# rm -rf feeds/luci/applications/luci-app-dockerman
-# rm -rf feeds/packages/net/aria2
-# cp -rf ../luci-app-aria2 feeds/luci/applications/luci-app-aria2
-# cp -rf ../luci-app-dockerman feeds/luci/applications/luci-app-dockerman
-# cp -rf ../aria2 feeds/packages/net/aria2
-# cp ../luciMenu.py luciMenu.py
-# chmod +x luciMenu.py
-# python3 luciMenu.py
-# rm -rf luciMenu.py
 
 # sed -i 's/dnsmasq/dnsmasq-full luci/g' include/target.mk
 # netdata passwall helloworld
@@ -44,6 +32,9 @@ sed -i 's/admin\/services\/wol/admin\/wol/g' feeds/luci/applications/luci-app-wo
 # applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
 # sed -i '/\"title\": \"kms server\"/a\\		\"order\": 100,' feeds/luci/applications/luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json
 
+# chmod +x luciMenu.py
+# python3 luciMenu.py
+# rm -rf luciMenu.py
 
 
 # cat feeds/luci/modules/luci-base/root/usr/share/luci/menu.d/luci-base.json
